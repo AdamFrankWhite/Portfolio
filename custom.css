@@ -1,0 +1,62 @@
+body {
+	padding-top: 50px;
+}
+
+nav h5:hover{
+	color: orange;
+
+}
+
+h1 {
+	font-family: Comfortaa;
+}
+
+.jumbotron{
+	width: 70%;
+	margin: auto;
+	background-image: url("images/header-img.jpg");
+}
+
+.jumbotron h1,
+.jumbotron p {
+	color: white;
+}
+
+.jumbotron,
+#about {
+	border-radius: 10px;
+}
+
+#about {
+	width: 60%;
+	background-color: lightgray;
+	margin: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+p {
+	display: block;
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+}
+
+#form {
+	width: 60%;
+	margin: auto;
+	margin-top: 1.5em;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+form {
+	padding: 20px;
+}
+
+.col {
+	margin-bottom: 0.5em;
+}

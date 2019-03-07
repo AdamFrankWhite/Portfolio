@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+		<link rel="stylesheet" href="custom.css">
+		<title>Adam White - Front End Developer</title>
+
+	</head>
+	<body>
+		<header id="home">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+				<a class="navbar-brand" href="#home"><h3>ADAM WHITE</h3></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#blog">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+
+		<main class="mt-4">
+			<div class="jumbotron">
+				<h1 class="display-4">Hello, I'm Adam White and I'm a Front End Developer</h1>
+				<hr class="my-4">
+				<p>Self-taught, I'm familiar with HTML, CSS and JavaScript. I'm searching for my first entry-level role.</p>
+				<p class="lead mt-3">
+				<a class="btn btn-primary btn-lg" href="adamWhiteCV.pdf" role="button">Download my CV</a>
+				</p>
+			</div>
+			<aside id="about">
+				<h2 class="text-center p-4">About Me</h1>
+				<p>Looking for a career-change, I have taught myself the basics of front-end programming. Whilst my original introduction to programming was creating a simple HTML website when I was 16, several years later, I have found myself drawn back into programming.</p><br>
+				<p>This time around, my first proper introduction into programming was with Python, although I soon migrated over to learning JavaScript, along with HTML and CSS. After frustrating months of battling with fundamental concepts such as variables, functions and loops, conditional statements, gradually things began to make more sense. Having gotten through feeling overwhelmed by the range of languages, concepts, frameworks and libraries, as well as the sheer amount that I didn't know (it took me quite a while to get my head around exactly a library was), bit bit by things started falling into place. Gradually, as my rate of learning began to improve, that feeling of overwhelm was replaced with a sense of curiousity and confidence that I could figure out whatever I needed to, eventually. </p><br>
+				<p>I slowly became to think like a programmer, and I found myself seeing conditional statements everywhere, both in digital technologies and in real-life. I found myself waking up with thoughts of how to better approach a problem in my current project.</p><br>
+				<p>When I started, the never-ending acronyms and abstract technologies was boggling, however I gradually figured out a path of frameworks and libraries I wanted to learn. I became increasingly more comfortable not knowing everything, and the learning became addictive. Torn between wanting to learn everything, and needing to focus, I slowly absorbed the basics of a variety of tools that I distinctly remember thinking, not so long ago, wow, I can't wait to learn jQuery (what the hell is that?), Bootstrap and AJAX. When I then starting learning about each one, I realised how far I had come. Granted the road ahead is never-ending, but the process of learning, I understand now, is part of the charm of programming.</p><br>
+				<p class="pb-3 mb-2">I liken this process to stumbling through the dark, gradually, piece-by-piece you can see slightly more each day and week passes.</p>
+			</aside>
+
+			<h2 class="text-center p-4">PROJECTS</h2>
+
+			<div class="card-group" id="projects">
+				<div class="card" style="width: 18rem;">
+					<img src="images/trumpAppPreview.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Trump Quote Generator</h5>
+						<p class="card-text">A simple quote generator, with randomized quote and colours. Tech used: HTML, CSS, JavaScript, JQuery.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+					<img src="images/castleAppPreview.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Castle Finder App</h5>
+						<p class="card-text">A simple quote generator, with randomized quote and colours. Tech used: HTML, CSS, JavaScript, Postcode API, Googlemaps API.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+
+				<div class="card" style="width: 18rem;">
+					<img src="images/portfolioPreview.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">This Site</h5>
+						<p class="card-text">Portfolio website using HTML, CSS, Bootstrap, PHP.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-center p-4" id="contact">CONTACT</h2>
+			<p class="text-center">Want to get in touch? Send me a message and I'll get back to you as soon as I can.</p>
+			<div id="form" action="contactform.php" method="post">
+				<form>
+					<div class="row">
+						<div class="col">
+							<label for="name">Name *</label>
+							<input id="name" name="name" type="text" class="form-control" placeholder="Your name" onfocus="this.placeholder = ''"
+	onblur="this.placeholder = 'Your name'" required>
+						</div>
+						<div class="col">
+							<label for="email">Email *</label>
+							<input id="email" name="email" type="email" class="form-control" placeholder="you@somewhere.com" onfocus="this.placeholder = ''"
+	onblur="this.placeholder = 'you@somewhere.com'" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label for="subject">Subject</label>
+							<input id="subject" name="subject" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label for="message">Message *</label>
+							<textarea class="form-control" id="message" name="message" rows="10" placeholder="Type your message here..." required></textarea>
+						</div>
+					</div>
+					<div class="text-center">
+						<button type="submit" name="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
+			</div>
+
+
+
+
+		</main>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+<!-- use https://developers.google.com/fonts/ as inspiration for design. use flexbox
+
+thought logs - you know you're a programmer when you cackle maniacally after finally catching a bug, missing a single character or piece of syntax
+
+write basic probram, got it working ,then time to refactor, to make it readable, maintanable and more polished
+
+-->
+
+
+</html>
