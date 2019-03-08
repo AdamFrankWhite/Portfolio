@@ -7,7 +7,7 @@ request.onload = function () {
 	console.log(results);
 	
 }
-
+console.log('test');
 var treehouseStats = `
 	<table>
 		<tr>
