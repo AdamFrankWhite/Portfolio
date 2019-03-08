@@ -7,16 +7,6 @@ request.onload = function () {
 	console.log(results);
 	
 }
-// request.send();
-
-// var requestTwo = new XMLHttpRequest();
-// requestTwo.open('GET', '');
-// requestTwo.onload = function() {
-	// var results = JSON.parse(requestTwo.responseText);
-	// console.log(results);
-// }
-
-// requestTwo.send();
 
 var treehouseStats = `
 	<table>
