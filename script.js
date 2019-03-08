@@ -7,38 +7,38 @@ request.onload = function () {
 	console.log(results);
 	
 }
-request.send();
+// request.send();
 
-var requestTwo = new XMLHttpRequest();
-requestTwo.open('GET', '');
-requestTwo.onload = function() {
-	var results = JSON.parse(requestTwo.responseText);
-	console.log(results);
-}
+// var requestTwo = new XMLHttpRequest();
+// requestTwo.open('GET', '');
+// requestTwo.onload = function() {
+	// var results = JSON.parse(requestTwo.responseText);
+	// console.log(results);
+// }
 
-requestTwo.send();
+// requestTwo.send();
 
 var treehouseStats = `
 	<table>
 		<tr>
 			<th>Points: </th>
-			<td>${request.points.total}</td>
+			<td>${results.points.total}</td>
 		</tr>
 		<tr>
 			<th>HTML: </th>
-			<td>${request.points.HTML}</td>
+			<td>${results.points.HTML}</td>
 		</tr>
 		<tr>
 			<th>CSS: </th>
-			<td>${request.points.CSS}</td>
+			<td>${results.points.CSS}</td>
 		</tr>
 		<tr>
 			<th>JavaScript: </th>
-			<td>${request.points.JavaScript}</td>
+			<td>${results.points.JavaScript}</td>
 		</tr>
 		<tr>
 			<th>Python: </th>
-			<td>${request.points.Python}</td>
+			<td>${results.points.Python}</td>
 		</tr>
 	</table>`
 	
