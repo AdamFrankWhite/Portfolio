@@ -33,3 +33,5 @@ request.onload = function () {
 		
 	stats.innerHTML = treehouseStats;
 }
+
+request.send();
