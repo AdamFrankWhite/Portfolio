@@ -1,4 +1,5 @@
 var stats = document.getElementById('stats');
+console.log('boo');
 
 var request = new XMLHttpRequest();
 request.open('GET', 'https://teamtreehouse.com/adamwhite11.json');
