@@ -1,10 +1,10 @@
-var stats = document.getElementById('stats');
+var statsTH = document.getElementById('statsTH');
 console.log('boo');
 
 var request = new XMLHttpRequest();
 request.open('GET', 'https://teamtreehouse.com/adamwhite11.json');
 request.onload = function () {
-	var results = JSON.parse(request.responseText);
+	let results = JSON.parse(request.responseText);
 	console.log(results);
 	
 	var treehouseStats = `
@@ -31,19 +31,25 @@ request.onload = function () {
 			</tr>
 		</table>`
 		
-	stats.innerHTML = treehouseStats;
+	statsTH.innerHTML = treehouseStats;
 }
 
 request.send();
 
 
 var requestCW = new XMLHttpRequest();
-request.open('GET', 'https://www.codewars.com/api/v1/users/:id');
-request.onload(function (){
-	
-	
-})
+requestCW.open('GET', 'https://www.codewars.com/api/v1/users/PosteriorFossa');
+requestCW.onload = function (){
+	let results = JSON.parse(requestCW.responseText);
+	console.log(results);
+}
 
-request.send();
+requestCW.send();
+
+
+
+
+
+
 
 // on learning place most recent katas by iterating through completed challenged object
