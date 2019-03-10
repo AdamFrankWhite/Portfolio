@@ -38,7 +38,7 @@ request.send();
 
 
 var requestCW = new XMLHttpRequest();
-requestCW.open('GET', 'https://www.codewars.com/api/v1/users/PosteriorFossa');
+requestCW.open('GET', 'https://www.codewars.com/api/v1/users/PosteriorFossa?access_key=Assj7y1dca_JUAywVwW_');
 requestCW.onload = function (){
 	let results = JSON.parse(requestCW.responseText);
 	console.log(results);
