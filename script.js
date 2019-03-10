@@ -35,3 +35,15 @@ request.onload = function () {
 }
 
 request.send();
+
+
+var requestCW = new XMLHttpRequest();
+request.open('GET', 'https://www.codewars.com/api/v1/users/:id');
+request.onload(function (){
+	
+	
+})
+
+request.send();
+
+// on learning place most recent katas by iterating through completed challenged object
