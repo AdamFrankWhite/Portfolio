@@ -11,6 +11,10 @@ h1 {
 	font-family: Comfortaa;
 }
 
+iframe {
+	width: 100%;
+}
+
 .jumbotron{
 	width: 70%;
 	margin: auto;
@@ -33,9 +37,15 @@ h1 {
 	margin: auto;
 }
 
+.card-group {
+	width: 85%;
+	margin: auto;
+}
+
 .card-img-top {
     width: 100%;
     height: auto;
+	border: 1px gray solid;
 }
 
 p {
@@ -59,4 +69,16 @@ form {
 
 .col {
 	margin-bottom: 0.5em;
+}
+
+.btn-group-center {
+	width: 70%;
+	left: 0;
+	bottom: 10px;
+	position: absolute;
+	margin: 0 15%;
+}
+
+.card-text {
+	margin-bottom: 50px;
 }
