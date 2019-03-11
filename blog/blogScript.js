@@ -1,0 +1,1 @@
+const cardTexts = document.getElementsByClassName('.card-text')

@@ -1,4 +1,5 @@
 var statsTH = document.getElementById('statsTH');
+var statsCW = document.getElementById('statsCW');
 console.log('boo');
 
 var request = new XMLHttpRequest();
@@ -37,16 +38,8 @@ request.onload = function () {
 request.send();
 
 
-var requestCW = new XMLHttpRequest();
-requestCW.open('GET', 'https://www.codewars.com/api/v1/users/PosteriorFossa?access_key=Assj7y1dca_JUAywVwW_');
-requestCW.onload = function (){
-	let results = JSON.parse(requestCW.responseText);
-	console.log(results);
-}
 
-requestCW.send();
-
-
+// big issue with codewars api and cors - had to implement alternative solution
 
 
 

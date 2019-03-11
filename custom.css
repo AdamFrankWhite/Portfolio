@@ -31,6 +31,12 @@ iframe {
 	border-radius: 10px;
 }
 
+.jumbotron .bg-1{
+	background-color: rgba(0,0,0,0.8);
+	padding: 0.25em;
+	border-radius: 10px;
+}
+
 #about {
 	width: 60%;
 	background-color: lightgray;
@@ -82,3 +88,9 @@ form {
 .card-text {
 	margin-bottom: 50px;
 }
+
+#cLearning {
+	color: white;
+	text-align: right;
+}
+
