@@ -11,12 +11,9 @@ h1 {
 	font-family: Comfortaa;
 }
 
-iframe {
-	width: 100%;
-}
 
 .jumbotron{
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	background-image: url("images/header-img.jpg");
 }
@@ -26,11 +23,6 @@ iframe {
 	color: white;
 }
 
-.jumbotron,
-#about {
-	border-radius: 10px;
-}
-
 .jumbotron .bg-1{
 	background-color: rgba(0,0,0,0.8);
 	padding: 0.25em;
@@ -38,11 +30,17 @@ iframe {
 }
 
 #about {
-	width: 60%;
-	background-color: lightgray;
+	width: 70%;
+	background-color: cream;
 	margin: auto;
+	margin-top: 1em;
+	
 }
-
+#projects {
+	background-color: lightgray;
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;
+}
 .card-group {
 	width: 85%;
 	margin: auto;
@@ -89,8 +87,45 @@ form {
 	margin-bottom: 50px;
 }
 
+.card{
+	width: 60%;
+	margin: auto;
+}
 #cLearning {
 	color: white;
-	text-align: right;
+	font-size: 0.75em;
 }
+
+#statsTH {
+	float: right;
+	padding: 0.75em;
+	margin: auto;
+	color: black;
+	border: 2px red solid;
+	border-radius: 10px;
+}
+
+
+tr:nth-child(even) {
+	background-color: gray;
+}
+
+tr:nth-child(odd) {
+	background-color: darkgray;
+}
+	
+
+
+.mt-6 {
+	margin-top: 50px;
+}
+
+
+code {
+	width: 70%;
+	display: block;
+	white-space: pre-line;
+	margin: auto;  
+}
+
 
