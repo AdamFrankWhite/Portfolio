@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+		<link rel="stylesheet" href="../custom.css">
+		<title>Adam White - Front End Developer</title>
+
+	</head>
+	<body>
+		<header id="home">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+				<a class="navbar-brand" href="../index.html"><h3>ADAM WHITE</h3></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNav">
+				
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../about/about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#projects">Projects</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="blog/blog.html">Blog <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#contact">Contact</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+
+		<main class="mt-4">
+			<div class="jumbotron">
+				<h1 class="display-4">Blog</h1>
+				<span id="cLearning">Currently Learning: using AJAX with JQuery</span>
+				<!-- create blog previews with substring(), onclick expand -->
+			</div>
+			
+			<div class="card mb-3 mt-3">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">The humble beginnings of a programmer...</h5>
+					<p class="card-text">What exactly is a function? What's an object?</p>
+					<p class="card-text">It's common to feel stuck when coding, since solving problems is the very essence of programming. During these times, when you feel as though you'll never get to grips with the current language, framework or library you are focused on, 
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+			
+			<div class="card mb-3">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">The progression of learning</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+			
+			<div class="card mb-3">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Perpetual Learning - good or bad?</h5>
+					<p class="card-text">Learning is a never-ending endeavour - be it programming, or life in general. There is such a vast amount of every-evolving knowledge, that continual learning and development is part of life.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+			
+			<div class="card mb-3">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">The Wonder of JQuery</h5>
+					<p class="card-text">This is an exciting post - to know enough about JavaScript to be able to appreciate the utility of JQuery.</p>
+					<p>JQuery is one of the most popular JavaScript libraries. It serves two main purposes: 1) It provides extensive cross-browswer support. 2) It simplifies so much JavaScript code with shorthand.</p>
+					<p>Take, for example, an AJAX request. In vanilla (plain) JavaScript, it would take this many lines of code to make a request:</p>
+					<code>
+						var request = new XMLHttpRequest();
+						request.open('GET', 'someaddress.com/file.json');
+						request.onload = function () {
+							var results = JSON.parse(request.responseText)
+							console.log(results)
+						}
+						request.send();
+					
+					
+					</code>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+		</main>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+<!-- use https://developers.google.com/fonts/ as inspiration for design. use flexbox
+
+thought logs - you know you're a programmer when you cackle maniacally after finally catching a bug, missing a single character or piece of syntax
+
+write basic probram, got it working ,then time to refactor, to make it readable, maintanable and more polished
+
+-->
+
+
+</html>
