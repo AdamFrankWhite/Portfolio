@@ -1,3 +1,7 @@
+body {
+	width: 100%;
+}
+
 header {
 	padding-top: 50px;
 }
@@ -12,17 +16,16 @@ h1 {
 }
 
 
-/* fixes anchors links to correct position */
 
 
 .jumbotron{
-	width: 80%;
+	width: 95%;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 40px;
 	background-image: url("images/header-img.jpg");
 }
 
-.jumbotron h1,
+.jumbotron h4,
 .jumbotron p {
 	color: white;
 }
@@ -36,7 +39,7 @@ h1 {
 #about {
 	background-color: rgba(0,0,0,0.8);
 	color: white;
-	width: 70%;
+	width: 95%;
 	margin: 40px auto;
 	border: 2px solid black;
 	border-radius: 15px;
@@ -149,5 +152,15 @@ code {
 	white-space: pre-line;
 	margin: auto;  
 }
+ 
+/* ==== Media Queries ==== */
 
+@media(max-width:767px){
+	body {
+		font-size: 0.75em;
+	}
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
