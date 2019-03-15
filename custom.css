@@ -1,5 +1,6 @@
 body {
 	width: 100%;
+
 }
 
 header {
@@ -13,6 +14,16 @@ nav h5:hover{
 
 h1 {
 	font-family: Comfortaa;
+	font-size: 1.5em;
+	color: white;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.3em;
 }
 
 
@@ -20,12 +31,13 @@ h1 {
 
 .jumbotron{
 	width: 95%;
+	max-width: 1000px;
 	margin: auto;
 	margin-top: 40px;
 	background-image: url("images/header-img.jpg");
 }
 
-.jumbotron h4,
+.jumbotron h1,
 .jumbotron p {
 	color: white;
 }
@@ -43,9 +55,14 @@ h1 {
 	margin: 40px auto;
 	border: 2px solid black;
 	border-radius: 15px;
+	overflow: hidden; /* cleanly hides h2 background */
 }
 
+#about h2 {
+	background-color: dodgerblue;
+	width: 100%;
 
+}
 
 #projects {
 	background-color: lightgray;
@@ -172,14 +189,22 @@ code {
 
 @media (max-width: 629px) {
 	.card-group > .card {
-		flex-basis: 100%; /*override boostrap media query */
+		flex-basis: 100%; /*override bootstrap flex mq for above 576px */
 	}
 }
 
-
+@media(min-width: 576px) {
+	#about {
+		width: 70%;
+	}
+}
 @media(min-width:576px) and (max-width:768px){
 	.btn-primary {
 		font-size: 1.1em;
+	}
+	
+	h1 {
+		font-size: 2em;
 	}
 }
 
@@ -210,7 +235,12 @@ code {
 	.card {
 		height: 390px;
 	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
 }
+
 @media(min-width:920px){
 	#form {
 		width: 60%;
