@@ -21,6 +21,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#projects">Projects</a>
 						</li>
@@ -45,18 +48,19 @@
 			<div class="jumbo-wrapper">
 				<div class="jumbotron">
 					<h1 class="bg-1 p-3 text-center">Hello, I'm Adam White and I'm a Front End Developer</h1>
-					<hr class="my-4">
-					<p class="bg-1 p-2">Self-taught, I'm familiar with HTML, CSS and JavaScript. I'm searching for my first entry-level role.</p>
-					<p class="lead mt-3">
-					<a class="btn btn-primary btn-sm" href="adamWhiteCV.pdf" role="button">Download my CV</a>
-					</p>
+					<hr class="my-2 border-white">
+					<p class="bg-1 p-2 text-center">Self-taught, I'm familiar with HTML, CSS and JavaScript. I'm searching for my first entry-level role.</p>
+          <div class="text-center mt-3">
+            <a class="btn btn-primary btn-sm jumbo-but" href="adamWhiteCV.pdf" role="button">Download my CV</a>
+            <a class="btn btn-primary btn-sm jumbo-but" href="#contact" role="button">Message Me</a>
+					</div>
 				</div>
 			</div>
 				
 				
 			
 			<!-- ABOUT SECTION -->
-			<aside id="about">
+			<section id="about" class="section">
 				<h2 class="text-center p-3">About</h2>
 				
 				<p class="mt-3">Seeking a career-change, I have taught myself the fundamentals of front-end programming.</p>
@@ -64,7 +68,7 @@
 				<p class="mt-2">After a couple of months of learning, I began to build my first rudimentary web pages and web applications. The nature of programming - solving problems and constructing solutions - is inherently satisfying and enjoyable.</p>
 				<p class="mt-2">Starting out, the never-ending acronyms and abstract technologies was somewhat overwhelming boggling, however I gradually figured out a path of frameworks and libraries I wanted to learn. I became increasingly more comfortable not knowing everything, and the learning itself became addictive. Torn between wanting to learn everything, and needing to focus, I slowly absorbed the basics of a variety of tools including jQuery, Bootstrap and AJAX. The constant nature of learning is infectious, and I understand now, is part of the charm of programming.</p>
 				<p class="mt-2 mb-3"> I am searching for an entry-level role, beginning my career in web development and programming.</p>
-			</aside>
+			</section>
 			
 			<!-- PROJECTS SECTION -->
 			<section id="projects" class="section">
@@ -115,7 +119,7 @@
 					</div>
 					
 					<div class="card mb-4">
-						<img src="images/trumpAppPreview.jpg" class="card-img-top" alt="...">
+						<img src="images/trumpAppPreview.jpg" class="card-img-top" alt="trump quote app preview">
 						<div class="card-body">
 							<h3 class="card-title">Trump Quote App</h3>
 							<p class="card-text">A simple quote generator, with randomized quote and colours. Tech used: HTML, CSS, JQuery.</p>
@@ -160,47 +164,49 @@
 			</section>
 			
 			<!-- CONTACT SECTION -->
-			<h2 class="text-center p-4 section" id="contact">CONTACT</h2>
-			<p class="text-center">Want to get in touch? Send me a message and I'll get back to you as soon as I can.</p>
-			<div id="form">
-				<form accept-charset="UTF-8" action="https://formspree.io/adamfrankwhite@outlook.com" method="post">
-					<input type="hidden" name="_next" value="https://posteriorfossa.github.io/Portfolio/thanks.html">
-					<input type="hidden" name="_subject" value="You have Developer Mail!">
-					<div class="row">
-						<div class="col">
-							<label for="name">Name *</label>
-							<input id="name" name="name" type="text" class="form-control" placeholder="Your name" onfocus="this.placeholder = ''"
-	onblur="this.placeholder = 'Your name'" required>
-						</div>
-						<div class="col">
-							<label for="email">Email *</label>
-							<input id="email" name="email" type="email" class="form-control" placeholder="you@somewhere.com" onfocus="this.placeholder = ''"
-	onblur="this.placeholder = 'you@somewhere.com'" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<label for="subject">Subject</label>
-							<input id="subject" name="subject" type="text" class="form-control">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<label for="message">Message *</label>
-							<textarea class="form-control" id="message" name="message" rows="10" placeholder="Type your message here..." required></textarea>
-						</div>
-					</div>
-					<div class="text-center">
-						<button type="submit" id="submit" class="btn btn-primary">Send</button>
-					</div>
-				</form>
-			</div>
-
+      <section class="section" id="contact">
+        <h2 class="text-center p-4">CONTACT</h2>
+        <p class="text-center">Want to get in touch? Send me a message and I'll get back to you as soon as I can.</p>
+        <div id="form">
+          <form accept-charset="UTF-8" action="https://formspree.io/adamfrankwhite@outlook.com" method="post">
+            <input type="hidden" name="_next" value="https://posteriorfossa.github.io/Portfolio/thanks.html">
+            <input type="hidden" name="_subject" value="You have Developer Mail!">
+            <div class="row">
+              <div class="col">
+                <label for="name">Name *</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Your name" onfocus="this.placeholder = ''"
+    onblur="this.placeholder = 'Your name'" required>
+              </div>
+              <div class="col">
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="you@somewhere.com" onfocus="this.placeholder = ''"
+    onblur="this.placeholder = 'you@somewhere.com'" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="message">Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="10" placeholder="Type your message here..." required></textarea>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" id="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
 
 
 		</main>
 		<footer>
+      <p class="text-center text-white pt-3">&#169; 2019 Adam Frank White</p>
 		</footer>
 
 
