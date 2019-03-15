@@ -61,15 +61,16 @@ tr:nth-child(odd) {
 	background-color: darkgray;
 }
 	
-#about h2 {
+#about h2,
+#projects h2,
+#contact h2 {
 	background-color: dodgerblue;
 	width: 100%;
+	color: white;
 
 }
 
 #projects h2 {
-	background-color: darkgreen;
-	color: white;
 	margin-top: -15px;
 }
 
@@ -184,11 +185,11 @@ tr:nth-child(odd) {
  
 /* ==== Media Queries ==== */
 
-@media(max-width:767px){
-	body {
-		font-size: 0.8em;
-	}
-}
+/* @media(max-width:767px){ */
+	/* body { */
+		/* font-size: 0.8em; */
+	/* } */
+/* } */
 
 @media (max-width: 629px) {
 	.card-group > .card {
@@ -202,6 +203,10 @@ tr:nth-child(odd) {
 	}
 	
 	.jumbo-but {
+		font-size: 1.2em;
+	}
+	
+	p {
 		font-size: 1em;
 	}
 }
@@ -239,6 +244,10 @@ tr:nth-child(odd) {
 }
 
 @media(min-width:768px){
+	
+	#about {
+		width: 60%;
+	}
 	.card {
 		height: 390px;
 	}
@@ -250,12 +259,20 @@ tr:nth-child(odd) {
 }
 
 @media(min-width:920px){
+	
+	p {
+		font-size: 1em;
+	}
 	#form {
-		width: 60%;
+		width: 70%;
 	}
 	
 	.card {
 		height: 420px;
+	}
+	
+	.jumbo-but {
+		font-size: 1.2em;
 	}
 }
 
@@ -280,7 +297,7 @@ tr:nth-child(odd) {
 	}
 	
 	#form {
-		width: 50%;
+		width: 60%;
 	}
 }
 
