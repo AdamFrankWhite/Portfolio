@@ -71,7 +71,8 @@ footer {
 	margin: auto;
 }
 
-.card-group {
+.card-group,
+.blog-card-group {
 	width: 85%;
 	margin: auto;
 	margin-top: 20px;
@@ -159,10 +160,33 @@ code {
 
 @media(max-width:767px){
 	body {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 }
+@media(min-width: 576px) {
+	
+	.card-group > .card {
+		flex-basis: 50%;
+	}
+	
+	#form {
+		width: 80%;
+	}
+	
+}
 @media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+@media(min-width:992px){
+	#form {
+		width: 60%;
+	}
+}
+@media(min-width:1200px){
+	.card-group > .card {
+		flex-basis: 33%;
+	}
+	
+	#form {
+		width: 50%;
+	}
+}
 
