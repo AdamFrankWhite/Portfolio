@@ -1,6 +1,7 @@
+/* ==== Elements ==== */
+
 body {
 	width: 100%;
-
 }
 
 header {
@@ -26,8 +27,53 @@ h3 {
 	font-size: 1.3em;
 }
 
+p {
+	display: block;
+	width: 80%;
+	font-size: 0.8em;
+	margin: auto;
+	text-align: justify;
+}
 
+form {
+	padding: 20px;
+}
 
+footer {
+	width: 100%;
+	height: 60px;
+	margin-top: 50px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+code {
+	width: 70%;
+	display: block;
+	white-space: pre-line;
+	margin: auto;  
+}
+
+tr:nth-child(even) {
+	background-color: gray;
+}
+
+tr:nth-child(odd) {
+	background-color: darkgray;
+}
+	
+#about h2 {
+	background-color: dodgerblue;
+	width: 100%;
+
+}
+
+#projects h2 {
+	background-color: darkgreen;
+	color: white;
+	margin-top: -15px;
+}
+
+/* ==== Classes ==== */
 
 .jumbotron{
 	width: 95%;
@@ -37,56 +83,24 @@ h3 {
 	background-image: url("images/header-img.jpg");
 }
 
-.jumbotron h1,
-.jumbotron p {
-	color: white;
-}
-
 .jumbotron .bg-1{
 	background-color: rgba(0,0,0,0.8);
-	padding: 0.25em;
 	border-radius: 10px;
-}
-
-#about {
-	background-color: rgba(0,0,0,0.8);
+	margin: auto;
 	color: white;
-	width: 95%;
-	margin: 40px auto;
-	border: 2px solid black;
-	border-radius: 15px;
-	overflow: hidden; /* cleanly hides h2 background */
 }
 
-#about h2 {
-	background-color: dodgerblue;
-	width: 100%;
-
+.jumbotron h1 {
+	width: 90%;
+}
+.jumbotron > p {
+	width: 80%;
 }
 
-#projects {
-	background-color: lightgray;
-	padding-top: 0.5em;
-	padding-bottom: 1.5em;
-	margin-top: 0;
+.jumbo-but {
+	padding: 0.2em 0.5em;
+	border-radius: 7px;
 }
-
-#projects h2 {
-	background-color: darkgreen;
-	color: white;
-	margin-top: -15px;
-}
-footer {
-	width: 100%;
-	height: 50px;
-	margin-top: 50px;
-	background-color: darkgreen;
-}
-
-/* .card { */
-	/* width: 100%; */
-	/* margin: auto; */
-/* } */
 
 .card-group,
 .blog-card-group {
@@ -95,31 +109,19 @@ footer {
 	margin-top: 20px;
 }
 
-
-
 .card-img-top {
     width: 100%;
     height: auto;
 	border: 1px gray solid;
 }
 
-p {
-	display: block;
-	width: 80%;
-	margin: auto;
-	text-align: justify;
+.card-title {
+	display: inline-block;
+	margin: 0 4% 10px 4%;
 }
 
-#form {
-	width: 90%;
-	margin: auto;
-	margin-top: 1.5em;
-	background-color: lightgray;
-	border-radius: 10px;
-}
-
-form {
-	padding: 20px;
+.card-text {
+	margin-bottom: 50px;
 }
 
 .col {
@@ -134,12 +136,36 @@ form {
 	margin: 1% 15%; /* margin = (100% - 70%) / 2   */
 }
 
-.card-title {
-	display: inline-block;
-	margin: 0 4% 10px 4%;
+.mt-6 {
+	margin-top: 50px;
 }
-.card-text {
-	margin-bottom: 50px;
+
+
+/* ==== IDs ==== */
+
+#about {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	width: 95%;
+	margin: 40px auto;
+	border: 2px solid black;
+	border-radius: 15px;
+	overflow: hidden; /* cleanly hides h2 background */
+}
+
+#projects {
+	background-color: lightgray;
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;
+	margin-top: 0;
+}
+
+#form {
+	width: 90%;
+	margin: auto;
+	margin-top: 1.5em;
+	background-color: lightgray;
+	border-radius: 10px;
 }
 
 #cLearning {
@@ -154,29 +180,6 @@ form {
 	color: black;
 	border: 2px red solid;
 	border-radius: 10px;
-}
-
-
-tr:nth-child(even) {
-	background-color: gray;
-}
-
-tr:nth-child(odd) {
-	background-color: darkgray;
-}
-	
-
-
-.mt-6 {
-	margin-top: 50px;
-}
-
-
-code {
-	width: 70%;
-	display: block;
-	white-space: pre-line;
-	margin: auto;  
 }
  
 /* ==== Media Queries ==== */
@@ -196,6 +199,10 @@ code {
 @media(min-width: 576px) {
 	#about {
 		width: 70%;
+	}
+	
+	.jumbo-but {
+		font-size: 1em;
 	}
 }
 @media(min-width:576px) and (max-width:768px){
@@ -239,6 +246,7 @@ code {
 	h1 {
 		font-size: 2.5em;
 	}
+	
 }
 
 @media(min-width:920px){
