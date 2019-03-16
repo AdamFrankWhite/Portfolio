@@ -20,7 +20,8 @@ h1 {
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
+	margin-bottom: 0px;
 }
 
 h3 {
@@ -144,21 +145,19 @@ tr:nth-child(odd) {
 
 /* ==== IDs ==== */
 
-#about {
-	background-color: rgba(0,0,0,0.8);
-	color: white;
-	width: 95%;
-	margin: 40px auto;
-	border: 2px solid black;
-	border-radius: 15px;
-	overflow: hidden; /* cleanly hides h2 background */
+/* #about { */
+	/* background-color: lightgray; */
+/* } */
+
+#about-text{
+	color: black;
+	background-color: lightgray;
+	width: 100%;
+	margin: auto;
 }
 
 #projects {
 	background-color: lightgray;
-	padding-top: 0.5em;
-	padding-bottom: 1.5em;
-	margin-top: 0;
 }
 
 #form {
@@ -198,8 +197,10 @@ tr:nth-child(odd) {
 }
 
 @media(min-width: 576px) {
-	#about {
-		width: 70%;
+	#about-text {
+		width: 80%;
+		margin: 30px auto;
+		border-radius: 10px;
 	}
 	
 	.jumbo-but {
@@ -244,10 +245,6 @@ tr:nth-child(odd) {
 }
 
 @media(min-width:768px){
-	
-	#about {
-		width: 60%;
-	}
 	.card {
 		height: 390px;
 	}
