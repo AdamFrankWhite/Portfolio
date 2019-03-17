@@ -157,6 +157,10 @@ tr:nth-child(odd) {
 	margin: 1% 15%; /* margin = (100% - 70%) / 2   */
 }
 
+.btn-primary {
+		font-size: 0.7em;
+	}
+
 .mt-6 {
 	margin-top: 50px;
 }
@@ -216,7 +220,6 @@ tr:nth-child(odd) {
 	display: none;
 }
 
-}
  
 /* ==== Media Queries ==== */
 
