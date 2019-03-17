@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    var $position = $(this).scrollTop() + 100;
+    var $position = $(this).scrollTop() + 100; // add 100 to offset fixed top navbar
 
     $('.section').each(function() {
         var target = $(this).offset().top;
