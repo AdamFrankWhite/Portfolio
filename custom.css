@@ -162,7 +162,7 @@ tr:nth-child(odd) {
 }
 
 .thumb {
-	width: 50px;
+	width: 20px;
 	height: auto;
 }
 
@@ -211,23 +211,11 @@ tr:nth-child(odd) {
 	border-radius: 10px;
 }
 
-#currentTH{
-	order: 2;
-	width: 250px;
-	height: 100px;
-	color: white;
-	font-size: 0.75em;
-	border-radius: 10px;
-	margin-right: 20px;
-	align-self: flex-end; /* align-self useful for align individual flex items */
+#statsTH,
+#currentTH {
+	display: none;
 }
-/* Make above a flex-container, put text and image side by side */
-#statsTH {
-	order: 3;
-	width: 170px;
-	padding: 0.75em;
-	border-radius: 10px;
-	color: white;
+
 }
  
 /* ==== Media Queries ==== */
@@ -251,8 +239,33 @@ tr:nth-child(odd) {
 		border-radius: 10px;
 	}
 	
+	#currentTH{
+		display: inline-block;
+		order: 2;
+		width: 250px;
+		height: 100px;
+		color: white;
+		font-size: 0.75em;
+		border-radius: 10px;
+		margin-right: 20px;
+		align-self: flex-end; /* align-self useful for align individual flex items */
+	}
+/* Make above a flex-container, put text and image side by side */
+	#statsTH {
+		display: inline-block;
+		order: 3;
+		width: 170px;
+		padding: 0.75em;
+		border-radius: 10px;
+		color: white;
+	}
+	
 	.jumbo-but {
 		font-size: 1.2em;
+	}
+	
+	.thumb {
+		width: 35px;
 	}
 	
 	p {
