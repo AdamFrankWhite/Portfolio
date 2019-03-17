@@ -25,13 +25,13 @@
 							<a class="nav-link" href="../index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="../about/about.html">About</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="../index.html#projects">Projects</a>
 						</li>
 						<li class="nav-item active">
 							<a class="nav-link" href="blog/blog.html">Blog <span class="sr-only">(current)</span></a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="https://github.com/PosteriorFossa/" target="_blank">Github</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../index.html#contact">Contact</a>
@@ -44,30 +44,34 @@
 
 
 		<main class="mt-4">
-			<div class="jumbotron">
+			<div class="jumbotron blog-jumbo">
+        <div id="statsTH"></div>
+        <div id="currentTH"></div>
 				<h1 class="display-4">Blog</h1>
-				<span id="cLearning">Currently Learning: using AJAX with JQuery</span>
+        
 				<!-- create blog previews with substring(), onclick expand -->
 			</div>
 			<div class="blog-card-group">
-				<div class="card mb-3 mt-3">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
+				<div class="card mb-3 mt-3 card-height">
+					<img src="../images/journey.jpg" class="card-img-top blog-card-image" alt="mountain view">
+					<div class="card-body"> <!-- issue is card height set to 390px in css -->
 						<h5 class="card-title">The humble beginnings of a programmer...</h5>
-						<p class="mt-4">Looking for a career-change, I have taught myself the basics of front-end programming. Whilst my original introduction to programming was creating a simple HTML website when I was 16, several years later, I have found myself drawn back into programming.</p><br>
-						<p>This time around, my first proper introduction into programming was with Python, although I soon migrated over to learning JavaScript, along with HTML and CSS. After frustrating months of battling with fundamental concepts such as variables, functions and loops, conditional statements, gradually things began to make more sense. Having gotten through feeling overwhelmed by the range of languages, concepts, frameworks and libraries, as well as the sheer amount that I didn't know (it took me quite a while to get my head around exactly a library was), bit bit by things started falling into place. Gradually, as my rate of learning began to improve, that feeling of overwhelm was replaced with a sense of curiousity and confidence that I could figure out whatever I needed to, eventually. </p><br>
-						<p>I slowly became to think like a programmer, and I found myself seeing conditional statements everywhere, both in digital technologies and in real-life. I found myself waking up with thoughts of how to better approach a problem in my current project.</p><br>
-						<p>When I started, the never-ending acronyms and abstract technologies was boggling, however I gradually figured out a path of frameworks and libraries I wanted to learn. I became increasingly more comfortable not knowing everything, and the learning became addictive. Torn between wanting to learn everything, and needing to focus, I slowly absorbed the basics of a variety of tools that I distinctly remember thinking, not so long ago, wow, I can't wait to learn jQuery (what the hell is that?), Bootstrap and AJAX. When I then starting learning about each one, I realised how far I had come. Granted the road ahead is never-ending, but the process of learning, I understand now, is part of the charm of programming.</p><br>
-						<p class="pb-3 mb-2">I liken this process to stumbling through the dark, gradually, piece-by-piece you can see slightly more each day and week passes.</p>
-						
-						<p class="card-text">What exactly is a function? What's an object?</p>
-						<p class="card-text">It's common to feel stuck when coding, since solving problems is the very essence of programming. During these times, when you feel as though you'll never get to grips with the current language, framework or library you are focused on, 
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						<p class="mt-4">Looking for a career-change, I have taught myself the basics of front-end programming. Whilst my original introduction to programming was creating a simple HTML website when I was 16, several years later, I have found myself drawn back into programming.</p>
+            <span class="read-more">read more...</span>
+						<span class="main-text">
+              <p>This time around, my first proper introduction into programming was with Python, although I soon migrated over to learning JavaScript, along with HTML and CSS. After frustrating months of battling with fundamental concepts such as variables, functions and loops, conditional statements, gradually things began to make more sense. Having gotten through feeling overwhelmed by the range of languages, concepts, frameworks and libraries, as well as the sheer amount that I didn't know (it took me quite a while to get my head around exactly a library was), bit bit by things started falling into place. Gradually, as my rate of learning began to improve, that feeling of overwhelm was replaced with a sense of curiousity and confidence that I could figure out whatever I needed to, eventually. </p><br>
+              <p>I slowly became to think like a programmer, and I found myself seeing conditional statements everywhere, both in digital technologies and in real-life. I found myself waking up with thoughts of how to better approach a problem in my current project.</p><br>
+              <p>When I started, the never-ending acronyms and abstract technologies was boggling, however I gradually figured out a path of frameworks and libraries I wanted to learn. I became increasingly more comfortable not knowing everything, and the learning became addictive. Torn between wanting to learn everything, and needing to focus, I slowly absorbed the basics of a variety of tools that I distinctly remember thinking, not so long ago, wow, I can't wait to learn jQuery (what the hell is that?), Bootstrap and AJAX. When I then starting learning about each one, I realised how far I had come. Granted the road ahead is never-ending, but the process of learning, I understand now, is part of the charm of programming.</p><br>
+              <p class="pb-3 mb-2">I liken this process to stumbling through the dark, gradually, piece-by-piece you can see slightly more each day and week passes.</p>
+              <p class="card-text">What exactly is a function? What's an object?</p>
+              <p class="card-text">It's common to feel stuck when coding, since solving problems is the very essence of programming. During these times, when you feel as though you'll never get to grips with the current language, framework or library you are focused on, 
+            </span>
+            <span class="hide-text">less...</span>
 					</div>
 				</div>
 				
 				<div class="card mb-3">
-					<img src="..." class="card-img-top" alt="...">
+					<img src="../images/steps.jpg" class="card-img-top" alt="step by step">
 					<div class="card-body">
 						<h5 class="card-title">The progression of learning</h5>
 						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -115,6 +119,28 @@
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
 				</div>
+        
+        <div class="card mb-3">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Getting Organised - using Trello or Jira</h5>
+						<p class="card-text">When designing a site or app, there are always so many things to do, and without adequate organisation, it is easy to get lost, overwhelmed, and make mistakes - mistakes that could cause a lot of hassle further down the line.</p>
+            <p>This is where organisational tools like Trello and Jira come into play. Whilst Jira is specifically meant for developers to use, Trello is also really useful. By breaking your project up into small tasks, you don't have to waste time and precious mental resources remembering what you need to do, or forgetting it!</p>
+            <p>When I first started using Trello to organise my work, the benefit was hugely noticeable. My stress went down and my productivity went up.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+        
+        <div class="card mb-3">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Bootstrap - to use or not to use....</h5>
+						<p class="card-text">Bootstrap is a front-end framework, designed by the folks behind Twitter. It is a useful tool, providing simple shortcuts and code snippets to help speed up your designing, and provide uniformity. However, it does have its drawbacks. </p>
+            <p>Some designers swear by it, others swear off it. As for me, whilst at first I found it relaly useful - its speed and ease is great, unfortunately I found that once I wanted to customise my designs more and tweak my own custom css stylesheet, it became a pain having to create super-specific selectors to take precedence over Bootstrap's own stylesheet.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+        
 			</div>
 		</main>
 
@@ -124,6 +150,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="blogScript.js"></script>
 	</body>
 
 

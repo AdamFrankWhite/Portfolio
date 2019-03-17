@@ -66,6 +66,19 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background-color: transparent;
 }
+
+.jumbotron h1 {
+	width: 90%;
+}
+.jumbotron > p {
+	width: 80%;
+}
+
+.blog-jumbo h1 {
+	order: 1;
+	display: inline-block;
+	/* margin-right: auto; */
+}
 	
 #about h2,
 #projects h2,
@@ -80,8 +93,12 @@ tr:nth-child(odd) {
 	margin-top: -15px;
 }
 
-#statsTH p{
-	font-size: 0.7em;
+#statsTH p {
+	font-size: 0.9em;
+}
+
+#currentTH p {
+	text-align: center;
 }
 
 /* ==== Classes ==== */
@@ -99,13 +116,6 @@ tr:nth-child(odd) {
 	border-radius: 10px;
 	margin: auto;
 	color: white;
-}
-
-.jumbotron h1 {
-	width: 90%;
-}
-.jumbotron > p {
-	width: 80%;
 }
 
 .jumbo-but {
@@ -154,7 +164,25 @@ tr:nth-child(odd) {
 .thumb {
 	width: 50px;
 	height: auto;
-	float: right;
+}
+
+/* ==== Blog Classes ==== */
+
+.blog-jumbo {
+	display: flex;
+	vertical-align: top;
+	padding: 42px;
+	/* justify-content: flex-end; */
+}
+
+.main-text,
+.hide-text {
+	display: none;
+}
+
+.read-more:hover,
+.hide-text:hover {
+	cursor: pointer;
 }
 
 
@@ -184,18 +212,20 @@ tr:nth-child(odd) {
 }
 
 #currentTH{
-	float: left;
-	width: 200px;
+	order: 2;
+	width: 250px;
+	height: 100px;
 	color: white;
 	font-size: 0.75em;
 	border-radius: 10px;
+	margin-right: 20px;
+	align-self: flex-end; /* align-self useful for align individual flex items */
 }
-
+/* Make above a flex-container, put text and image side by side */
 #statsTH {
-	float: right;
+	order: 3;
 	width: 170px;
 	padding: 0.75em;
-	margin-top: -32px;
 	border-radius: 10px;
 	color: white;
 }
