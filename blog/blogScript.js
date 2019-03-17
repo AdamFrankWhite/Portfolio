@@ -1,5 +1,8 @@
 var statsTH = document.getElementById('statsTH');
 var currentTH = document.getElementById('currentTH');
+var readMore = document.getElementsByClassName('read-more')[0];
+var mainText = document.getElementsByClassName('main-text')[0];
+var hideText = document.getElementsByClassName('hide-text')[0];
 
 
 var request = new XMLHttpRequest();
@@ -37,7 +40,7 @@ request.onload = function () {
 		</table>`
     
     var currentlyLearning = 
-      `<p>Currently learning: ${latestCourse}</p>
+      `<p>Currently learning: <strong>${latestCourse}</strong></p>
        <div class="text-center">
         <img class="thumb" src="${latestBadge}">
        </div>`
@@ -54,7 +57,17 @@ request.send();
 
 // big issue with codewars api and cors - had to implement alternative solution
 
+readMore.addEventListener('click', function () {
+  readMore.style.display = "none";
+  mainText.style.display = "block";
+  hideText.style.display = "block";
+});
 
+hideText.addEventListener('click', function () {
+  readMore.style.display = "block";
+  mainText.style.display = "none";
+  hideText.style.display = "none";
+});
 
 
 
