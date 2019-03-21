@@ -184,9 +184,15 @@ tr:nth-child(odd) {
 	display: none;
 }
 
+.read-more,
+.hide-text {
+	color: blue;
+}
+
 .read-more:hover,
 .hide-text:hover {
 	cursor: pointer;
+	color: orange;
 }
 
 
@@ -308,9 +314,10 @@ tr:nth-child(odd) {
 }
 
 @media(min-width:768px){
-	/* .card { */
-		/* height: 390px; */
-	/* } */
+	.btn-primary {
+		font-size: 1em;
+	}
+	
 	.card-group > .card {
 		flex-basis: 40%;
 	}
@@ -339,7 +346,7 @@ tr:nth-child(odd) {
 	/* } */
 	
 	.jumbo-but {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	
 }
