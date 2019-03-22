@@ -317,15 +317,6 @@ tr:nth-child(odd) {
 		font-size: 1em;
 	}
 }
-/* @media(min-width:576px) and (max-width:768px){ */
-	/* .btn-primary { */
-		/* font-size: 1.1em; */
-	/* } */
-	
-	/* h1 { */
-		/* font-size: 2em; */
-	/* } */
-/* } */
 
 @media(min-width: 630px) and (max-width:1199px) {
 	.btn-primary {
@@ -351,7 +342,7 @@ tr:nth-child(odd) {
 
 @media(min-width:768px){
 	.btn-primary {
-		font-size: 1em;
+		font-size: 0.95em;
 	}
 	
 	.card-group > .card {
