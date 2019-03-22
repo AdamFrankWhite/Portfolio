@@ -73,11 +73,6 @@ tr:nth-child(odd) {
 .jumbotron > p {
 	width: 80%;
 }
-
-.blog-jumbo h1 {
-	order: 1;
-	display: inline-block;
-}
 	
 #about h2,
 #projects h2,
@@ -90,14 +85,6 @@ tr:nth-child(odd) {
 
 #projects h2 {
 	margin-top: -15px;
-}
-
-#statsTH p {
-	font-size: 0.9em;
-}
-
-#currentTH p {
-	text-align: center;
 }
 
 /* ==== Classes ==== */
@@ -165,16 +152,33 @@ tr:nth-child(odd) {
 }
 
 .thumb {
+	margin-top: 10px;
 	width: 20px;
 	height: auto;
 }
 
-/* ==== Blog/Thanks Classes ==== */
+/* ==== Blog/Thanks Classes/IDs ==== */
+
+#statsTH h5 {
+	text-align: center;
+}
+#statsTH p {
+	font-size: 0.9em;
+}
+
+#currentTH p {
+	text-align: center;
+}
 
 .blog-jumbo {
 	display: flex;
 	vertical-align: top;
 	padding: 42px;
+	height: 273px;
+}
+
+.blog-jumbo h1 {
+	order: 1;
 }
 
 .main-text,
