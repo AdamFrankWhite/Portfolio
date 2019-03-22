@@ -77,7 +77,6 @@ tr:nth-child(odd) {
 .blog-jumbo h1 {
 	order: 1;
 	display: inline-block;
-	/* margin-right: auto; */
 }
 	
 #about h2,
@@ -170,13 +169,12 @@ tr:nth-child(odd) {
 	height: auto;
 }
 
-/* ==== Blog Classes ==== */
+/* ==== Blog/Thanks Classes ==== */
 
 .blog-jumbo {
 	display: flex;
 	vertical-align: top;
 	padding: 42px;
-	/* justify-content: flex-end; */
 }
 
 .main-text,
@@ -195,12 +193,56 @@ tr:nth-child(odd) {
 	color: orange;
 }
 
+.thanks {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	font-family: Comfortaa;
+	background-color: dodgerblue;
+	width: 90%;
+	text-align: center;
+	border: black 2px solid;
+	border-radius: 10px;
+}
+
+.thanks h1,
+.thanks h2,
+.thanks p {
+	text-align: center;
+	color: white;
+}
+
+.thanks h1 {
+	font-size: 1.5em;
+	margin-bottom: 0.25em;
+}
+
+.thanks h2 {
+	font-size: 1em;
+}
+
+.thanks p {
+	margin: 1em auto;
+}
+
+.thanks a {
+	color: orange;
+	text-decoration: none;
+}
+
+.thanks a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+
+
+
 
 /* ==== IDs ==== */
-
-/* #about { */
-	/* background-color: lightgray; */
-/* } */
 
 #about-text{
 	color: black;
@@ -229,19 +271,13 @@ tr:nth-child(odd) {
  
 /* ==== Media Queries ==== */
 
-/* @media(max-width:767px){ */
-	/* body { */
-		/* font-size: 0.8em; */
-	/* } */
-/* } */
-
 @media (max-width: 629px) {
 	.card-group > .card {
 		flex-basis: 100%; /*override bootstrap flex mq for above 576px */
 	}
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
 	#about-text {
 		width: 80%;
 		margin: 30px auto;
@@ -324,6 +360,20 @@ tr:nth-child(odd) {
 	
 	h1 {
 		font-size: 2.5em;
+	}
+	
+	/* Thanks page */
+	.thanks {
+		width: 60%;
+	}
+	
+	.thanks h1 {
+		font-size: 2em;
+		margin-bottom: 0.25em;
+	}
+
+	.thanks h2 {
+		font-size: 1.25em;
 	}
 	
 }
