@@ -345,6 +345,11 @@ tr:nth-child(odd) {
 }
 
 @media(min-width:768px){
+	
+	#about-text {
+		width: 60%;
+	}
+	
 	.btn-primary {
 		font-size: 0.95em;
 	}
