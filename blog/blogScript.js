@@ -1,9 +1,12 @@
+// === Selectors ==========
+
 var statsTH = document.getElementById('statsTH');
 var currentTH = document.getElementById('currentTH');
 var readMore = document.getElementsByClassName('read-more')[0];
 var mainText = document.getElementsByClassName('main-text')[0];
 var hideText = document.getElementsByClassName('hide-text')[0];
 
+// === AJAX calls ==========
 
 var request = new XMLHttpRequest();
 request.open('GET', 'https://teamtreehouse.com/adamwhite11.json');
@@ -38,6 +41,9 @@ request.onload = function () {
 				<td>${results.points.Python}</td>
 			</tr>
 		</table>`
+		
+		statsTH.innerHTML = treehouseStats;
+		statsTH.style.border = "2px white solid"; // border added dynamically to avoid showing empty div on load
     
     var currentlyLearning = 
       `<p>Currently learning: <strong>${latestCourse}</strong></p>
@@ -45,17 +51,13 @@ request.onload = function () {
         <img class="thumb" src="${latestBadge}">
        </div>`
 		
-	statsTH.innerHTML = treehouseStats;
-  statsTH.style.border = "2px white solid"; // border added dynamically to avoid showing empty div on load
-  currentTH.innerHTML = currentlyLearning;
-  currentTH.style.border = "2px white solid";
+		currentTH.innerHTML = currentlyLearning;
+		currentTH.style.border = "2px white solid";
 }
 
 request.send();
 
-
-
-// big issue with codewars api and cors - had to implement alternative solution
+// === Event Listeners ===========
 
 readMore.addEventListener('click', function () {
   readMore.style.display = "none";
@@ -69,6 +71,3 @@ hideText.addEventListener('click', function () {
   hideText.style.display = "none";
 });
 
-
-
-// on learning place most recent katas by iterating through completed challenged object
