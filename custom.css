@@ -272,6 +272,10 @@ tr:nth-child(odd) {
 	display: none;
 }
 
+#currentTH {
+	min-width: 165px;
+}
+
  
 /* ==== Media Queries ==== */
 
