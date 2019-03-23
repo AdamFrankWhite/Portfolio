@@ -2,9 +2,9 @@
 
 var statsTH = document.getElementById('statsTH');
 var currentTH = document.getElementById('currentTH');
-var readMore = document.getElementsByClassName('read-more')[0];
-var mainText = document.getElementsByClassName('main-text')[0];
-var hideText = document.getElementsByClassName('hide-text')[0];
+var readMore = document.getElementsByClassName('read-more');
+var mainText = document.getElementsByClassName('main-text');
+var hideText = document.getElementsByClassName('hide-text');
 
 // === AJAX calls ==========
 
@@ -58,16 +58,18 @@ request.onload = function () {
 request.send();
 
 // === Event Listeners ===========
+for (let i=0; i<readMore.length; i++) {
+		
+	readMore[i].addEventListener('click', function () {
+		readMore[i].style.display = "none";
+		mainText[i].style.display = "block";
+		hideText[i].style.display = "block";
+	});
 
-readMore.addEventListener('click', function () {
-  readMore.style.display = "none";
-  mainText.style.display = "block";
-  hideText.style.display = "block";
-});
-
-hideText.addEventListener('click', function () {
-  readMore.style.display = "block";
-  mainText.style.display = "none";
-  hideText.style.display = "none";
-});
+	hideText[i].addEventListener('click', function () {
+		readMore[i].style.display = "block";
+		mainText[i].style.display = "none";
+		hideText[i].style.display = "none";
+	});
+}
 
