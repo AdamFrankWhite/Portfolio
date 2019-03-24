@@ -48,10 +48,12 @@ footer {
 }
 
 code {
-	width: 70%;
+	width: 80%;
 	display: block;
-	white-space: pre-line;
+	text-align: left;
+	white-space: pre-line; /* keeps all whitespace */
 	margin: auto;  
+	line-height: 1.5em;
 }
 
 table {
@@ -117,8 +119,8 @@ tr:nth-child(odd) {
 }
 
 .card-img-top {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 	border: 1px gray solid;
 }
 
@@ -181,6 +183,15 @@ tr:nth-child(odd) {
 	order: 1;
 }
 
+.blog-card-group {
+	max-width:750px;
+}
+
+.list-group-flush {
+	width: 80%;
+	margin: auto;
+}
+
 .main-text,
 .hide-text {
 	display: none;
@@ -188,7 +199,9 @@ tr:nth-child(odd) {
 
 .read-more,
 .hide-text {
+	display: block;
 	color: blue;
+	text-align: center;
 }
 
 .read-more:hover,
