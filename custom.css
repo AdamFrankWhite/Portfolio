@@ -220,10 +220,10 @@ tr:nth-child(odd) {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
 	font-family: Comfortaa;
-	background-color: dodgerblue;
+	background-color: white;
 	width: 90%;
 	text-align: center;
 	border: black 2px solid;
@@ -234,7 +234,7 @@ tr:nth-child(odd) {
 .thanks h2,
 .thanks p {
 	text-align: center;
-	color: white;
+	color: dodgerblue;
 }
 
 .thanks h1 {
@@ -253,6 +253,7 @@ tr:nth-child(odd) {
 .thanks a {
 	color: orange;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .thanks a:hover {
