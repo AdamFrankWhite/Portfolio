@@ -1,11 +1,11 @@
 /* ==== Elements ==== */
 
 body {
-	width: 100%;
+	font-weight: 600;
 }
 
 header {
-	padding-top: 50px;
+	padding-top: 45px;
 }
 
 nav h5:hover{
@@ -46,11 +46,16 @@ form {
 	padding: 20px;
 }
 
+form > label {
+	text-align: left;
+}
+
 footer {
 	width: 100%;
 	height: 60px;
 	margin-top: 50px;
 	background-color: rgba(0,0,0,0.8);
+	display: flex;
 }
 
 code {
@@ -58,7 +63,7 @@ code {
 	display: block;
 	text-align: left;
 	white-space: pre-line; /* keeps all whitespace */
-	margin: auto;  
+	margin: auto;
 	line-height: 1.5em;
 }
 
@@ -81,28 +86,107 @@ tr:nth-child(odd) {
 .jumbotron > p {
 	width: 80%;
 }
-	
-#about h2,
+
+#about-text h2,
 #projects h2,
 #contact h2 {
-	background-color: dodgerblue;
-	width: 100%;
-	color: white;
+	text-shadow: 2px 2px 2px lightgray;
+	margin-top: -55px;
+	position: absolute;
+	background-color: white;
+	left: 50%;
+	margin-left: -2.2em;
+}
 
+#about-text h2,
+#contact h2 {
+	margin-top: -55px;
 }
 
 #projects h2 {
-	margin-top: -15px;
+	margin-top: -90px;
+	margin-left: -3.25em;
 }
 
+#about-text h2,
+#projects h2,
+#contact h2 {
+	display: inline-block;
+	background-color: forestgreen;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	border: 4px forestgreen solid;
+	border-radius: 5px;
+	-webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+
+}
+
+#about-text h2 > span,
+#projects h2 > span,
+#contact h2 > span {
+	display: inline-block;
+	transform: skew(20deg);
+}
+
+
+/* ==== IDs ==== */
+
+#about-text{
+	border: forestgreen 3px solid;
+	padding: 1em;
+	color: auto;
+	width: 100%;
+	margin: auto;
+}
+
+#contact {
+	width: 100%;
+	margin: auto;
+	padding-top: 10px;
+	border: 3px forestgreen solid;
+	border-radius: 4px;
+}
+
+#form {
+	width: 90%;
+	margin: auto;
+	margin-top: 1.5em;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+#statsTH,
+#currentTH {
+	display: none;
+}
+
+#currentTH {
+	min-width: 165px;
+}
+
+
+
 /* ==== Classes ==== */
+.jumbo-wrapper {
+	width: 100%;
+	height: 350px;
+	background-image: url("images/header-img.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .jumbotron{
 	width: 95%;
 	max-width: 1000px;
 	margin: auto;
-	margin-top: 40px;
-	background-image: url("images/header-img.jpg");
+	/* background-image: url("images/header-img.jpg"); */
+	background-color: rgba(255,255,255,0.3);
 }
 
 .jumbotron .bg-1{
@@ -115,6 +199,12 @@ tr:nth-child(odd) {
 .jumbo-but {
 	padding: 0.2em 0.5em;
 	border-radius: 7px;
+}
+
+#projects > .card-group {
+	border: forestgreen 3px solid;
+	border-radius: 3px;
+	width: 100%;
 }
 
 .card-group,
@@ -234,7 +324,7 @@ tr:nth-child(odd) {
 .thanks h2,
 .thanks p {
 	text-align: center;
-	color: dodgerblue;
+	color: forestgreen;
 }
 
 .thanks h1 {
@@ -261,42 +351,6 @@ tr:nth-child(odd) {
 	font-weight: bold;
 }
 
-
-
-
-
-
-/* ==== IDs ==== */
-
-#about-text{
-	color: black;
-	background-color: lightgray;
-	width: 100%;
-	margin: auto;
-}
-
-#projects {
-	background-color: lightgray;
-}
-
-#form {
-	width: 90%;
-	margin: auto;
-	margin-top: 1.5em;
-	background-color: lightgray;
-	border-radius: 10px;
-}
-
-#statsTH,
-#currentTH {
-	display: none;
-}
-
-#currentTH {
-	min-width: 165px;
-}
-
- 
 /* ==== Media Queries ==== */
 
 @media (max-width: 629px) {
@@ -307,11 +361,10 @@ tr:nth-child(odd) {
 
 @media (min-width: 576px) {
 	#about-text {
-		width: 80%;
-		margin: 30px auto;
-		border-radius: 10px;
+		margin: 80px auto;
+		border-radius: 3px;
 	}
-	
+
 	#currentTH{
 		display: inline-block;
 		order: 2;
@@ -332,15 +385,15 @@ tr:nth-child(odd) {
 		border-radius: 10px;
 		color: white;
 	}
-	
+
 	.jumbo-but {
 		font-size: 1.2em;
 	}
-	
+
 	.thumb {
 		width: 35px;
 	}
-	
+
 	p {
 		font-size: 1em;
 	}
@@ -350,44 +403,70 @@ tr:nth-child(odd) {
 	.btn-primary {
 		font-size: 0.9em;
 	}
-	
+
 	.card-group > .card {
 		flex-basis: 100%;
 	}
-	
+
 	.card:nth-of-type(odd) {
 		margin-right: 5%;
 	}
-	
+
 	#form {
 		width: 80%;
 	}
-	
+
 }
 
 @media(min-width:768px){
-	
-	#about-text {
-		width: 60%;
+
+	#about {
+		width: 80%;
+		margin: auto;
 	}
-	
+
+	#projects {
+		padding-bottom: 40px;
+	}
+
+	#contact {
+		width: 80%;
+		margin-top: 30px;
+	}
+	.jumbo-wrapper {
+		height: 350px;
+	}
+
+
 	.btn-primary {
 		font-size: 0.95em;
 	}
-	
+
+	#projects > .card-group {
+		width: 90%;
+		margin: 30px auto;
+
+	}
+
 	.card-group > .card {
 		flex-basis: 40%;
 	}
-	
+
 	h1 {
 		font-size: 2.5em;
 	}
-	
+
+	#projects h2 {
+			position: absolute;
+
+	}
+}
+
 	/* Thanks page */
 	.thanks {
 		width: 60%;
 	}
-	
+
 	.thanks h1 {
 		font-size: 2em;
 		margin-bottom: 0.25em;
@@ -396,42 +475,67 @@ tr:nth-child(odd) {
 	.thanks h2 {
 		font-size: 1.25em;
 	}
-	
+
 }
 
 @media(min-width:920px){
-	
+
+
 	p {
 		font-size: 1em;
 	}
 	#form {
 		width: 70%;
 	}
-	
+
 	.blog-card-group {
 		width: 60%;
 	}
-		
+
 	.jumbo-but {
 		font-size: 1em;
 	}
-	
+
 }
 
 @media(min-width:1200px){
 	.card-group > .card {
 		flex-basis: 28%;
+		margin: 30px auto;
 	}
-	
+
 	.card:nth-of-type(1),
 	.card:nth-of-type(2),
 	.card:nth-of-type(4),
 	.card:nth-of-type(5){ /*add margin to first two columns only */
 		margin-right: 3%;
 	}
-	
-	#form {
+	#contact {
 		width: 60%;
 	}
-}
 
+	#form {
+		width: 80%
+	}
+
+	#contact p {
+		margin: 2em auto;
+	}
+
+	#form label {
+		padding: 10px 0;
+	}
+
+	h2 {
+		padding: 2.5em;
+		font-size: 1.9em;
+	}
+
+	footer {
+		height: 150px;
+		font-size: 1.1em;
+	}
+
+
+
+}
