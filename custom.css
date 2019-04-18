@@ -272,14 +272,21 @@ tr:nth-child(odd) {
 	padding: 42px;
 	height: 273px;
 	color: black;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 10px;
 }
 
 .blog-jumbo h1 {
 	order: 1;
+	flex-basis: 50%;
 }
 
 .blog-card-group {
 	max-width:750px;
+	margin-top: 50px;
 }
 
 .list-group-flush {
