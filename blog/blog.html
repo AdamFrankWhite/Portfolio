@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 		<link rel="stylesheet" href="../custom.css">
-		<title>Adam White - Front End Developer</title>
+		<title>Adam Frank White</title>
 
 	</head>
 	<body>
@@ -51,24 +51,50 @@
 			</div>
 			<!-- Blog cards -->
 			<div class="blog-card-group">
-        <!-- <div class="card mb-3"> -->
-					<!-- <img src="..." class="card-img-top" alt="..."> -->
-					<!-- <div class="card-body"> -->
-						<!-- <h5 class="card-title">Declarative Programming - a very useful concept</h5> -->
-						<!-- <p class="card-text">Declarative Programming is all about making life easier for all programmers. Remember, you aren't going to be the only one looking at your code, so it needs to be easy to understand. We all know after a couple of hours of heaving programming, looking at a jumbled, cryptic mess of code is exhausting, compared to code that's easy to read and understand.</p> -->
-            <!-- <p>Declarative programming is about making the code speak for itself.Let's take a simple example.Here is a code snippet hiding an error message:</p> -->
-            <!-- <code> -->
-            <!-- $('#error').css({'visibility':'hidden'}); -->
-            <!-- </code> -->
-            <!-- <p>Yes, in this simple example, understanding this simple JQuery method isn't too difficult.But what about this piece of code?</p> -->
-            <!-- <code> -->
-            <!-- hideError(); -->
-            <!-- </code> -->
-            <!-- <p>We can't get much simpler than that, can we? By placing our code in its own function, not only do we make our code more maintainable, but we simplify the reading of our code.</p> -->
-            <!-- <p>Imagine if your code was ten times more complicated, declarative programming would make the world of difference in reading an understanding more complex code.</p> -->
-						<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-					<!-- </div> -->
-				<!-- </div> -->
+        <div class="card mb-3">
+					<img src="../images/declarative.jpg" class="card-img-top" alt="help me">
+					<div class="card-body">
+						<h5 class="card-title">Declarative Programming vs Imperative programming</h5>
+						<p>Declarative Programming is all about making life easier for programmers.</p>
+						<p class="pb-3">Here's the difference between the two:</p>
+						<p>
+						<ul>
+							<li>Declarative programming is code that describes <em>what</em> you are doing.</li>
+							<li>Imperative programming is code that describes <em>how</em> you are doing something.</li>
+						</ul>
+						<p class="pb-3">Declarative program takes up fewer lines of code and is easier to read - because the code describes itself. Conversely, imperative programming takes up more lines of code, and is harder to read at a glance, because you have to decipher what it is that particulary code block is doing. Wouldn't it be easier if the code could speak for itself? Enter, declarative programming.</p>
+						<span class="read-more">read more...</span>
+						<span class="main-text">
+							<p class="pb-3">Declarative programming has become increasinly popular as a method of programming, which is evident from the prevalance of libraries such as React and jQuery, as well as JavaScript's map, filter and reduce methods. Let's look at an example.</p>
+							<p class="pb-3">Remember, you aren't going to be the only one looking at your code, so it needs to be easy to understand. We all know after a couple of hours of heaving programming, looking at a jumbled, cryptic mess of code is exhausting, compared to code that's easy to read and understand.</p>
+							<p class="pb-3">Declarative programming is about making the code speak for itself. Let's look at an example. Say you had an array of integers that you wanted to add together:</p>
+							<code class="pl-3 pb-3 mb-2">
+							let myArray = [3, 5, 6, 3, 7, 9];
+							</code>
+							<p class="pb-3">Traditionally, we would solve this problem imperatively, by looping through the array, cumulatively adding each item to a count variable:</p>
+							<code class="pl-3 pb-3 mb-2">
+							let myArray = [3, 5, 6, 3, 7, 9];
+							let total = 0;
+							
+							for (let i=0; i&lt;myArray.length; i++) {
+								total += myArray[i]
+							}
+							console.log(total) // 33
+							</code>
+							<p class="pb-3">Our code does the job, but it's not that easy to read. Imagine if our program was 1000 times more complicated - we'd spend a lot of time and brainpower trying to understand what our code does. </p>
+							<p class="pb-3"> What about a more declarative approach? If we use the reduce method, our code for the above problem would look like this:</p>
+							<code class="pl-2 pr-1 pb-3 mb-2">
+							let myArray = [3, 5, 6, 3, 7, 9];
+							let total = myArray.reduce( (total, num) => total + num, 0);
+							
+							console.log(total) // 33
+							</code>
+							<p class="pb-3">In this example, the reduce method takes two arguments - num (each item) and sum (the running total), which is initialized to 0 at the end of the method. It then iterates through myArray, applying our code to each one. Notice though, that this is all done under the hood, behind the scenes. By abstracting the details away, our code is becomes easier to deal with. As you can see, not only does this take fewer lines of code, but it's easier to understand - we can clearly see we are <i>reducing</i> our array to its sum.</p>
+							<p class="pb-3">Now, imagine if your code was a thousand times more complicated - declarative programming would make the task much more managable.</p>
+							<span class="hide-text">read less...</span>
+						</span>
+					</div>
+				</div>
 				
 				<div class="card mb-3">
 					<img src="../images/stackoverflow.jpg" class="card-img-top blog-card-image" alt="stack overflow">

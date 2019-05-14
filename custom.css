@@ -59,12 +59,15 @@ footer {
 }
 
 code {
-	width: 80%;
+	width: 70%;
 	display: block;
 	text-align: left;
 	white-space: pre-line; /* keeps all whitespace */
 	margin: auto;
 	line-height: 1.5em;
+	background-color: black;
+	border-radius: 5px;
+	
 }
 
 table {
@@ -287,6 +290,12 @@ tr:nth-child(odd) {
 .blog-card-group {
 	max-width:750px;
 	margin-top: 50px;
+}
+
+.card-body ul {
+	width: 85%;
+	margin: auto;
+	padding-bottom: 1em;
 }
 
 .list-group-flush {
